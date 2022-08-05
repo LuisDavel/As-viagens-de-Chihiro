@@ -1,6 +1,5 @@
 # Site As viagens de Chihiro
-Desafio do site viagens de Chihiro 
- Baseado no site: 
+Desafio proposto pelo Iuri Silva, baseado no site: 
 https://desafios-da-codelandia.vercel.app/Desafio%205%20-%20Studio%20Ghibli/index.html#
 
 ##
