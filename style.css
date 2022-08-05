@@ -1,0 +1,204 @@
+header{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+header > div{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+header > div > figure > img{
+    width: 120px;
+}
+
+div > nav > ul{
+    display: flex ;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+main{
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,#628E75, #1A4855);
+}
+
+main > section{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    width: 50vw;
+    padding: 4rem;
+}
+
+section > article > h4 {
+    font-family: var(--Poppins);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+section > article > h1 {
+    font-family: var(--Poppins);
+    line-height: 80px;
+    font-size: 84px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+section > article > p {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+section > article > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+section > article > div > button {
+    transform: skew(-25deg);
+    background-color: transparent;
+    border: 2px solid var(--btn);
+    width: 225px;
+    height: 45px;
+}
+
+section > article > div > button:first-of-type {
+    background-color: var(--btn);
+}
+
+section > article > div > button > a {
+    transform: skew(25deg);
+    font-weight: 400;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+section > article > div > button > a > img {
+    margin:  0 12px;
+    width: 12px;
+}
+
+section > figure {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: inherit;
+}
+
+section > figure > img {
+    position: relative;
+    width: 450px;
+    animation: 2.5s flutua infinite;
+}
+
+@keyframes flutua {
+    0%{
+        top: 3%;
+    }
+    50%{
+        top: 1%;
+    }
+    100%{
+        top: 3%;
+    }
+}
+
+
+@media (max-width: 968px) {
+    section:first-of-type{
+       width: 100%;
+    }
+
+    section:nth-last-of-type(1){
+        display: none;
+    }
+
+}
+
+@media (max-width: 968px) {
+    section > article > h1 {
+        font-family: var(--Poppins);
+        line-height: 60px;
+        font-size: 54px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0 0 25px;
+    }
+    section > article > div{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 322px) {
+
+    header > div{
+        padding: 5px;
+    }
+
+    div > nav > ul{
+       gap: 15px;
+    }
+
+    section > article > h4 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    section > article{
+        align-items: center;
+    }
+
+    section > article > h1 {
+        line-height: 40px;
+        font-size: 34px;
+        font-weight: 900;
+    }
+
+    section > article > p {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    section > article > div{
+        width: 50%;
+    }
+
+    section > article > div{
+        gap: 15px;
+    }
+
+    section > article > div > button {
+        width: 300px;
+        height: 45px;
+    }
+
+    section > article > div > button > a {
+        font-size: 12px;
+    }
+
+}
